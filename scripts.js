@@ -7,9 +7,14 @@ const daysamount = () =>{
         const week = document.getElementById('spending__week')
         const fragment = document.createDocumentFragment()
         for(const days of res){
-            const item = document.createElement('P')
-            item.textContent = ` day ${days.day} and amount ${days.amount}`
-            fragment.appendChild(item)
+            const divitem = document.createElement('DIV')
+            const day = document.createElement('P')
+            const amount = document.createElement('P')
+            day.textContent = `${days.day}`
+            amount.textContent = `${days.amount}`
+            divitem.appendChild(amount)
+            divitem.appendChild(day)
+            fragment.appendChild(divitem)
         }
         week.appendChild(fragment)
     })
