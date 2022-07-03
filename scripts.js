@@ -16,7 +16,8 @@ const daysamount = () =>{
             amount.style.margin = "0"
             amount.style.height = `${days.amount * 1.3}%`
             amount.style.borderRadius = "3px" 
-            console.log(typeof(days.amount))
+            day.style.textAlign = "center"
+            amount.style.color = "transparent"
             if (days.amount>=50) {
                 amount.style.backgroundColor = "hsl(186, 34%, 60%)"
             }

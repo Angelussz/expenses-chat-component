@@ -4,6 +4,8 @@
 body{
     margin: 0;
     background-color: hsl(27, 66%, 92%);
+    font-family:'DM Sans', sans-serif;
+    
 }
 main{
     min-width: 337px;
@@ -16,11 +18,11 @@ main{
 }
 
 .description{
-    font-family:'DM Sans', sans-serif;
+    
     font-weight: 400;
 }
 .money,.percent,.spending__description{
-    font-family: 'DM Sans', sans-serif;
+    
     font-weight: 700;
 }
 .mybalance{
@@ -32,8 +34,18 @@ main{
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     
 }
+
+.mybalance__description{
+    margin-left: -50px;
+}
+
+.mybalance__logo{
+    margin-right: -50px;
+}
+
 .mybalance,.spending{
     border-radius: 10px;
 }
@@ -57,7 +69,7 @@ main{
     margin: 0;
     font-size: 1.3rem;
     flex-grow: 0.3;
-    border:blue solid 4px;
+    /* border:blue solid 4px; */
 }
 
 .spending__week{
@@ -68,7 +80,7 @@ main{
     justify-content: space-between;
     align-items: flex-end;
     flex-grow: 1;
-    border:blue solid 4px;
+    /* border:blue solid 4px; */
 }
 
 .spending__amount{
@@ -89,5 +101,20 @@ main{
     align-content: flex-end;
     align-items: flex-end;
     flex-grow: 0;
-    border:blue solid 4px;
+    border-top:hsl(25, 47%, 15%) solid 1px;
+}
+.money{
+    font-size: 20px;
+}
+
+.total .money, .total .description {
+    
+    margin-top: 0;
+}
+.total__month, .total .percent{
+    margin-bottom: 0;
+}
+
+.total .description,.total__month{
+    color:hsl(28, 10%, 53%);
 }
