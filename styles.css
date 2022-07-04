@@ -118,3 +118,9 @@ main{
 .total .description,.total__month{
     color:hsl(28, 10%, 53%);
 }
+
+@media (min-width: 750px) {
+    main{
+        height: 450px;
+    }
+}
